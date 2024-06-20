@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>User Login</h2>
+    <form action="login.php" method="post">
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <label for="role">Login As:</label>
+      <select id="role" name="role" required>
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+      </select>
+      
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="registration_form.php">Register here</a></p>
+  </div>
+</body>
+</html>
